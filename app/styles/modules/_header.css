@@ -66,13 +66,12 @@
 
     &__icon-start{
         cursor:pointer;
-
         color: #fff;
         position: absolute;
         font-size:2em;
         text-align: center;
         padding: 10px 0;
-        z-index: 3;
+        z-index: 1;
         bottom: 1.38em;
         width: 100%;
         background:rgba(158, 109, 77, .2);
