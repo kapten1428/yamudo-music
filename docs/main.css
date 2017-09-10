@@ -39,9 +39,9 @@ q:before, q:after {
 }.header{
     position: absolute;
     background:  -webkit-gradient(linear, left bottom, left top, from(rgba(209, 185, 117, .3)), to(rgba(109, 0, 25, .1))),
-            url(/images/background-main.jpg) no-repeat 67% 0;
+            url(images/background-main.jpg) no-repeat 67% 0;
     background:  linear-gradient(to top, rgba(209, 185, 117, .3) 0%, rgba(109, 0, 25, .1) 100%),
-            url(/images/background-main.jpg) no-repeat 67% 0;
+            url(images/background-main.jpg) no-repeat 67% 0;
     background-size: cover;
     width: 100vw;
     height: 100%;
