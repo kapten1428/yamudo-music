@@ -1,0 +1,26 @@
+.nav-menu-mobile{
+    opacity: 0;
+    position: absolute;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    width:100vw;
+    height:100vh;
+    background: rgba(48, 48, 48, .92);
+    z-index: 2;
+  ul{
+    margin:auto;
+  }
+  li{
+    padding: 10px 0;
+    &:hover{
+      border-bottom: 1px solid #fff;
+    }
+
+  }
+  a{
+    font-family: var(--font-primary);
+    font-size: 1.6em;
+    font-weight: 200;
+  }
+}

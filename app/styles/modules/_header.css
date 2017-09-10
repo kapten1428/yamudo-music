@@ -4,7 +4,7 @@
             url('../images/background-main.jpg') no-repeat 67% 0 ;
     background-size: cover;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
 
     &__hero{
         @apply --width-small-view;
@@ -24,11 +24,20 @@
         &-menu{
             flex:1;
             color:#fff;
+
             &--mobile{
                 position: relative;
                 font-size: 1.6em;
                 text-align: right;
                 top:50%;
+                display: block;
+                z-index:5;
+                transition: font-size 2s;
+
+                &--is-close{
+                    font-size: 0;
+                    display: none;
+                }
             }
         }
     }
@@ -56,15 +65,28 @@
     }
 
     &__icon-start{
+        cursor:pointer;
+
         color: #fff;
         position: absolute;
         font-size:2em;
         text-align: center;
         padding: 10px 0;
-
+        z-index: 3;
         bottom: 1.38em;
         width: 100%;
         background:rgba(158, 109, 77, .2);
+        transition-property: opacity,padding,width;
+        transition-duration: 1s;
+        transition-timing-function: ease-in;
+
+        &--hidden{
+            width: 230%;
+            opacity: 0;
+            padding: 0 0;
+
+
+        }
     }
 
 }
