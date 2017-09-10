@@ -13,7 +13,7 @@ module.exports = {
       port:3000
     },
     output:{
-        path : path.resolve(__dirname,'dist'),
+        path : path.resolve(__dirname,'docs'),
         filename : 'bundle.js'
     },
     module : {
@@ -41,12 +41,26 @@ module.exports = {
                         {
                             loader: 'css-loader',
                             options: {
-                                importLoaders: 2
+                                importLoaders: 1
                             }
                         },
                         'postcss-loader'
                     ]
                 })
+            },
+            {
+                test: /\.(jpg|png|svg)$/,
+                use:[
+                    {
+                        loader: 'file-loader',
+                        options:{
+                            name: '[name].[ext]',
+                            outputPath: 'images/',
+                            publicPath: '/'
+                        }
+                    }
+
+                ]
             }
 
 
@@ -58,6 +72,6 @@ module.exports = {
             minify : false
         }),
         new extractTextPlugin('main.css'),
-        new cleanWebpackPlugin(['dist'])
+        new cleanWebpackPlugin(['docs'])
     ]
 }

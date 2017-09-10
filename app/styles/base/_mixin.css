@@ -1,0 +1,10 @@
+//@custom-media --view-small (width >= 22.25em); /*420*/
+//@custom-media --view-medium (width >= 48em); /*768*/
+//@custom-media --view-large (width >= 64em); /*1024*/
+//@custom-media --view-larger (width >= 66.25em); /*1060*/
+//@custom-media --view-extraLarge (width >= 80em); /*1280*/
+
+@custom-media --viewport-small (width >= 576px);
+@custom-media --viewport-medium (width >= 768px);
+@custom-media --viewport-large (width >= 992px);
+@custom-media --viewport-extraLarge (width >= 1200px);
