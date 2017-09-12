@@ -1,33 +1,29 @@
 include _mixins
 block header
-    header
-        .header
-            .header__hero
-                .header__hero--logo
-                    img(src='images/logo.png')
-                .header__hero-menu
-                    .header__hero-menu--mobile
-                        .header__hero-menu--mobile--is-open
-                            <i class="fa fa-align-right" aria-hidden="true"></i>
-                        .header__hero-menu--mobile--is-close
-                            <i class="fa fa-times" aria-hidden="true"></i>
+    header.header
+            nav.nav.nav--is-open
+                .header__logo
+                    a(href='#')
+                        img(src="images/logo.png")
+                .header__icon-menu
+                    .header__icon-menu-list
+                    .header__icon-menu-list-a
+                .header__nav-bar
+                    ul.nav__item
+                        li
+                            a(href="#") Start
+                        li
+                            a(href="#") Programs
+                        li
+                            a(href="#") Explorer
+                        li
+                            a(href="#") About Us
+                        li
+                            a(href="#") Contacts
 
             .header__description
-                h3 Make Beautiful
-                h2 Melody
+                h1.maintitle YoMuDo Studio
+                h2.subtitle Your Melody Start Here
+                h2.subtitle_caption Create Beautiful Melody For Someone You Love
 
-
-    .nav-menu-mobile
-
-        ul
-            li
-                a() Start
-            li
-                a() Explorers
-            li
-                a() Blog
-            li
-                a() About
-            li
-                a() Contact
-
+                button.btn.btn__begin Get Started

@@ -11,8 +11,8 @@
 
 
     --brown-light : #FD9064;
-    --container-default-size : 90%;
-    --container-max-size: 66.75em;
+    --container-default-size : 98%;
+    --container-max-size: 70.75em;
     --container-small-max-size:23.437em;
 
     --width-default:{
@@ -23,7 +23,8 @@
 
     --width-small-view:{
         width: 90%;
-        margin: 1em auto;
+        margin:0 auto;
+
     }
 
 

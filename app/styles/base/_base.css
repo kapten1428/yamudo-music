@@ -1,6 +1,12 @@
+
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:100,300,500,700');
 
 @custom-media --viewport-small (width >= 576px);
 @custom-media --viewport-medium (width >= 768px);
 @custom-media --viewport-large (width >= 992px);
 @custom-media --viewport-extraLarge (width >= 1200px);
+
+*{
+  margin: 0;
+  padding: 0;
+}

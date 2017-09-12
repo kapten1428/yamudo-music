@@ -4,6 +4,14 @@
 //@custom-media --view-larger (width >= 66.25em); /*1060*/
 //@custom-media --view-extraLarge (width >= 80em); /*1280*/
 
+@define-mixin clearfix{
+  &::after{
+    content: " ";
+    clear: both;
+    display: block;
+  }
+}
+
 @custom-media --viewport-small (width >= 576px);
 @custom-media --viewport-medium (width >= 768px);
 @custom-media --viewport-large (width >= 992px);
